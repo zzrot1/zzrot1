@@ -4,6 +4,7 @@ import os
 import urllib.request
 import datetime
 import html
+import base64
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
@@ -52,6 +53,16 @@ def esc(v):
 stats = github_stats(CONFIG["github_username"])
 today = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
+def embedded_image(path):
+    p = Path(path)
+    if not p.exists():
+        return ""
+    mime = "image/png" if p.suffix.lower() == ".png" else "image/jpeg"
+    encoded = base64.b64encode(p.read_bytes()).decode("ascii")
+    return f"data:{mime};base64,{encoded}"
+
+mr_robot_image = embedded_image(ROOT / "assets" / "mr-robot.jpg")
+
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -83,57 +94,89 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" view
 <rect x="20" y="66" width="350" height="430" rx="8" fill="#0b1728" stroke="#1e3a5f"/>
 <rect x="390" y="66" width="590" height="430" rx="8" fill="#0b1728" stroke="#1e3a5f"/>
 
-<text x="36" y="90" class="mono title">SYSTEM_MAP</text>
-<text x="348" y="90" text-anchor="end" class="mono small">FULLSTACK / CLOUD</text>
+<text x="36" y="90" class="mono title">IDENTITY_STREAM</text>
+<text x="348" y="90" text-anchor="end" class="mono small">PHOTO / SOURCE</text>
 <line x1="32" y1="104" x2="358" y2="104" stroke="#17324f"/>
 
-<g class="mono">
-  <path d="M92 184 H165" stroke="#23577d" stroke-width="2" stroke-dasharray="4 6">
-    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.6s" repeatCount="indefinite"/>
-  </path>
-  <path d="M215 184 H286" stroke="#23577d" stroke-width="2" stroke-dasharray="4 6">
-    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.6s" repeatCount="indefinite"/>
-  </path>
-  <path d="M190 210 V272" stroke="#23577d" stroke-width="2" stroke-dasharray="4 6">
-    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.6s" repeatCount="indefinite"/>
-  </path>
-  <path d="M190 322 V374" stroke="#23577d" stroke-width="2" stroke-dasharray="4 6">
-    <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.6s" repeatCount="indefinite"/>
-  </path>
+<defs>
+  <clipPath id="mediaClip">
+    <rect x="34" y="120" width="322" height="300" rx="8"/>
+  </clipPath>
+</defs>
 
-  <rect x="40" y="158" width="52" height="52" rx="9" fill="#0f2238" stroke="#22d3ee"/>
-  <text x="66" y="180" text-anchor="middle" fill="#22d3ee" font-size="15">WEB</text>
-  <text x="66" y="197" text-anchor="middle" class="small">UI</text>
+<!-- MR. ROBOT IMAGE PHASE -->
+<g clip-path="url(#mediaClip)">
+  <rect x="34" y="120" width="322" height="300" rx="8" fill="#06101d"/>
 
-  <rect x="165" y="158" width="52" height="52" rx="9" fill="#0f2238" stroke="#60a5fa"/>
-  <text x="191" y="180" text-anchor="middle" fill="#60a5fa" font-size="15">API</text>
-  <text x="191" y="197" text-anchor="middle" class="small">REST</text>
+  {f'<image href="{mr_robot_image}" x="34" y="120" width="322" height="300" preserveAspectRatio="xMidYMid slice"/>' if mr_robot_image else '<text x="195" y="260" text-anchor="middle" class="mono small">add assets/mr-robot.jpg</text>'}
 
-  <rect x="286" y="158" width="52" height="52" rx="9" fill="#0f2238" stroke="#34d399"/>
-  <text x="312" y="180" text-anchor="middle" fill="#34d399" font-size="15">DB</text>
-  <text x="312" y="197" text-anchor="middle" class="small">SQL</text>
+  <!-- dark cinematic tint -->
+  <rect x="34" y="120" width="322" height="300" fill="#03111d" opacity=".38"/>
 
-  <rect x="144" y="272" width="94" height="50" rx="9" fill="#0f2238" stroke="#f59e0b"/>
-  <text x="191" y="294" text-anchor="middle" fill="#fbbf24" font-size="14">DOCKER</text>
-  <text x="191" y="309" text-anchor="middle" class="small">container</text>
+  <!-- photo fades out -->
+  <rect x="34" y="120" width="322" height="300" fill="#07111f" opacity="0">
+    <animate attributeName="opacity"
+             values="0;0;1;1;0"
+             keyTimes="0;0.38;0.48;0.88;1"
+             dur="10s"
+             repeatCount="indefinite"/>
+  </rect>
 
-  <rect x="130" y="374" width="122" height="56" rx="9" fill="#0f2238" stroke="#a78bfa"/>
-  <text x="191" y="397" text-anchor="middle" fill="#c4b5fd" font-size="14">KUBERNETES</text>
-  <text x="191" y="414" text-anchor="middle" class="small">helm · argo cd</text>
+  <!-- CODE PHASE -->
+  <g class="mono" opacity="0">
+    <animate attributeName="opacity"
+             values="0;0;1;1;0"
+             keyTimes="0;0.40;0.50;0.88;1"
+             dur="10s"
+             repeatCount="indefinite"/>
 
-  <circle r="4" fill="#22d3ee" filter="url(#glow)">
-    <animateMotion dur="3s" repeatCount="indefinite" path="M66 184 H191 H312"/>
-  </circle>
-  <circle r="4" fill="#a78bfa" filter="url(#glow)">
-    <animateMotion dur="2.6s" repeatCount="indefinite" path="M191 210 V402"/>
-  </circle>
+    <rect x="34" y="120" width="322" height="300" fill="#06101d"/>
+
+    <text x="48" y="145" fill="#22d3ee" font-size="11">$ whoami</text>
+    <text x="48" y="165" fill="#dbeafe" font-size="11">ioan@mihu: full-stack-engineer</text>
+
+    <text x="48" y="195" fill="#34d399" font-size="11">const stack = &#123;</text>
+    <text x="62" y="215" fill="#93c5fd" font-size="11">frontend: ["React", "Next.js"],</text>
+    <text x="62" y="235" fill="#93c5fd" font-size="11">backend: ["Node.js", "C#"],</text>
+    <text x="62" y="255" fill="#93c5fd" font-size="11">infra: ["Docker", "K8s"],</text>
+    <text x="62" y="275" fill="#93c5fd" font-size="11">cloud: ["AWS", "Azure"],</text>
+    <text x="48" y="295" fill="#34d399" font-size="11">&#125;;</text>
+
+    <text x="48" y="328" fill="#fbbf24" font-size="11">deploy --env production</text>
+    <text x="48" y="350" fill="#64748b" font-size="10">[build] compiling...</text>
+    <text x="48" y="370" fill="#64748b" font-size="10">[test] all checks passed</text>
+    <text x="48" y="390" fill="#34d399" font-size="10">[ship] production ready ✓</text>
+
+    <rect x="48" y="400" width="7" height="13" fill="#22d3ee">
+      <animate attributeName="opacity" values="1;0;1" dur=".8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- glitch strips during transition -->
+  <g opacity="0">
+    <animate attributeName="opacity"
+             values="0;0;1;0;1;0;0"
+             keyTimes="0;0.39;0.42;0.44;0.46;0.49;1"
+             dur="10s"
+             repeatCount="indefinite"/>
+    <rect x="34" y="188" width="322" height="5" fill="#22d3ee" opacity=".7">
+      <animate attributeName="x" values="20;52;34" dur=".18s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="34" y="274" width="322" height="3" fill="#fb7185" opacity=".6">
+      <animate attributeName="x" values="42;18;34" dur=".13s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="34" y="337" width="322" height="4" fill="#60a5fa" opacity=".45">
+      <animate attributeName="x" values="28;58;34" dur=".16s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </g>
 
-<text x="36" y="462" class="mono small">STATUS</text>
-<circle cx="90" cy="458" r="4" fill="#34d399">
-  <animate attributeName="opacity" values="1;.35;1" dur="1.8s" repeatCount="indefinite"/>
+<text x="36" y="447" class="mono small">MODE</text>
+<circle cx="77" cy="443" r="4" fill="#34d399">
+  <animate attributeName="opacity" values="1;.3;1" dur="1.4s" repeatCount="indefinite"/>
 </circle>
-<text x="102" y="462" class="mono small" fill="#34d399">ALL SYSTEMS NOMINAL</text>
+<text x="89" y="447" class="mono small" fill="#34d399">IDENTITY → SOURCE → REPEAT</text>
+<text x="36" y="470" class="mono small">10s LOOP / SVG SMIL</text>
 
 <text x="408" y="90" class="mono title">SYSTEM_INFO</text>
 <circle cx="866" cy="87" r="4" fill="#fb7185"/>
