@@ -1,0 +1,17 @@
+{
+  "name": "Ioan Mihu",
+  "github_username": "imihu",
+  "role": "Full-Stack Software Engineer",
+  "origin": "Romania",
+  "focus": "Product Engineering · Architecture · DevOps",
+  "frontend": "React · Next.js · TypeScript",
+  "backend": "Node.js · Express · C#",
+  "data": "PostgreSQL · MongoDB",
+  "devops": "Docker · Kubernetes · Helm · Terraform",
+  "cloud": "AWS · Azure",
+  "cicd": "GitLab CI · Azure DevOps · Argo CD",
+  "testing": "Playwright · Unit · E2E",
+  "website": "mihuioan.com",
+  "linkedin": "linkedin.com/in/ioan-mihu",
+  "status": "Building · Learning · Shipping"
+}
