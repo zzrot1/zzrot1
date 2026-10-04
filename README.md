@@ -1,4 +1,12 @@
-<img src="./assets/profile.svg" width="100%" alt="Ioan Mihu — Full-Stack Software Engineer" />
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile.svg">
+  <img src="assets/profile.svg" width="100%" alt="profile.sh --live">
+</picture>
+
+</div>
 
 ## This is me :)
 
