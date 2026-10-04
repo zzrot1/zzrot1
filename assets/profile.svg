@@ -108,11 +108,11 @@
 
 <line x1="404" y1="472" x2="966" y2="472" stroke="#17324f"/>
 <text x="410" y="490" class="mono small" fill="#34d399">● Building · Learning · Shipping</text>
-<text x="950" y="490" text-anchor="end" class="mono small">repos — · followers — · contributions —</text>
+<text x="950" y="490" text-anchor="end" class="mono small">repos 1 · followers 0 · contributions 0</text>
 
 <rect x="20" y="66" width="960" height="2" fill="#22d3ee" opacity=".08">
   <animate attributeName="y" values="66;494;66" dur="8s" repeatCount="indefinite"/>
 </rect>
 
-<text x="500" y="512" text-anchor="middle" class="mono small">2026-10-04 18:14 UTC</text>
+<text x="500" y="512" text-anchor="middle" class="mono small">2026-10-04 18:16 UTC</text>
 </svg>
