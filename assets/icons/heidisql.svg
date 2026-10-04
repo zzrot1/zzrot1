@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g fill="none" stroke="#8B5CF6" stroke-width="4">
+    <ellipse cx="32" cy="13" rx="20" ry="8"/>
+    <path d="M12 13v27c0 5 9 9 20 9s20-4 20-9V13"/>
+    <path d="M12 26c0 5 9 9 20 9s20-4 20-9"/>
+  </g>
+  <text x="32" y="43" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#C4B5FD">H</text>
+</svg>

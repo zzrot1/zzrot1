@@ -39,7 +39,7 @@ I think **product first**, then choose the right tech stack to turn the idea int
   &nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/mariadb/003545" width="42" height="42" alt="MariaDB" title="MariaDB" />
   &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/heidisql/7E57C2" width="42" height="42" alt="HeidiSQL" title="HeidiSQL" />
+  <img src="./assets/icons/heidisql.svg" width="42" height="42" alt="HeidiSQL" title="HeidiSQL" />
   &nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/docker/2496ED" width="42" height="42" alt="Docker" title="Docker" />
   &nbsp;&nbsp;
@@ -49,17 +49,17 @@ I think **product first**, then choose the right tech stack to turn the idea int
   &nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/terraform/844FBA" width="42" height="42" alt="Terraform" title="Terraform" />
   &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/argocd/EF7B4D" width="42" height="42" alt="Argo CD" title="Argo CD" />
+  <img src="./assets/icons/argocd.svg" width="42" height="42" alt="Argo CD" title="Argo CD" />
 </p>
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/amazonwebservices/FF9900" width="42" height="42" alt="AWS" title="AWS" />
+  <img src="./assets/icons/aws.svg" width="42" height="42" alt="AWS" title="AWS" />
   &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/microsoftazure/0078D4" width="42" height="42" alt="Azure" title="Azure" />
+  <img src="./assets/icons/azure.svg" width="42" height="42" alt="Azure" title="Azure" />
   &nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/git/F05032" width="42" height="42" alt="Git" title="Git" />
   &nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/github/FFFFFF" width="42" height="42" alt="GitHub" title="GitHub" />
   &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Git%20Extensions-5C2D91?style=flat&logo=git&logoColor=white" height="42" alt="Git Extensions" title="Git Extensions" />
+  <img src="./assets/icons/git-extensions.svg" width="42" height="42" alt="Git Extensions" title="Git Extensions" />
 </p>
