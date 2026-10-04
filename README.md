@@ -1,4 +1,4 @@
-![Ioan Mihu — Full-Stack Software Engineer](./assets/profile.svg)
+<img src="./assets/profile.svg" width="100%" alt="Ioan Mihu — Full-Stack Software Engineer" />
 
 ## This is me :)
 
@@ -12,40 +12,54 @@ I think **product first**, then choose the right tech stack to turn the idea int
 
 ## The tools I build with
 
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="44" height="44" title="Linux" alt="Linux" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="44" height="44" title="TypeScript" alt="TypeScript" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="44" height="44" title="JavaScript" alt="JavaScript" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="44" height="44" title="React" alt="React" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="44" height="44" title="Node.js" alt="Node.js" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="44" height="44" title="Express" alt="Express" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="44" height="44" title="Vue.js" alt="Vue.js" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="44" height="44" title="AngularJS" alt="AngularJS" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="44" height="44" title="Python" alt="Python" />
+<p align="center">
+  <img src="https://cdn.simpleicons.org/linux/FCC624" width="42" height="42" alt="Linux" title="Linux" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/typescript/3178C6" width="42" height="42" alt="TypeScript" title="TypeScript" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="42" height="42" alt="JavaScript" title="JavaScript" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/react/61DAFB" width="42" height="42" alt="React" title="React" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="42" height="42" alt="Node.js" title="Node.js" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/express/FFFFFF" width="42" height="42" alt="Express" title="Express" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" width="42" height="42" alt="Vue.js" title="Vue.js" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/angular/DD0031" width="42" height="42" alt="AngularJS" title="AngularJS" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python/3776AB" width="42" height="42" alt="Python" title="Python" />
 </p>
 
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="44" height="44" title="PostgreSQL" alt="PostgreSQL" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="44" height="44" title="MariaDB" alt="MariaDB" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/HeidiSQL-6A5ACD?style=for-the-badge&logo=database&logoColor=white" height="44" title="HeidiSQL" alt="HeidiSQL" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="44" height="44" title="Docker" alt="Docker" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" width="44" height="44" title="Kubernetes" alt="Kubernetes" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/helm/helm-original.svg" width="44" height="44" title="Helm" alt="Helm" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="44" height="44" title="Terraform" alt="Terraform" />
-  &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" width="44" height="44" title="Argo CD" alt="Argo CD" />
+<p align="center">
+  <img src="https://cdn.simpleicons.org/nextdotjs/FFFFFF" width="42" height="42" alt="Next.js" title="Next.js" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql/4169E1" width="42" height="42" alt="PostgreSQL" title="PostgreSQL" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/mariadb/003545" width="42" height="42" alt="MariaDB" title="MariaDB" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/heidisql/7E57C2" width="42" height="42" alt="HeidiSQL" title="HeidiSQL" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker/2496ED" width="42" height="42" alt="Docker" title="Docker" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="42" height="42" alt="Kubernetes" title="Kubernetes" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/helm/0F1689" width="42" height="42" alt="Helm" title="Helm" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/terraform/844FBA" width="42" height="42" alt="Terraform" title="Terraform" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/argocd/EF7B4D" width="42" height="42" alt="Argo CD" title="Argo CD" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/amazonwebservices/FF9900" width="42" height="42" alt="AWS" title="AWS" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/microsoftazure/0078D4" width="42" height="42" alt="Azure" title="Azure" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/git/F05032" width="42" height="42" alt="Git" title="Git" />
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github/FFFFFF" width="42" height="42" alt="GitHub" title="GitHub" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Git%20Extensions-5C2D91?style=flat&logo=git&logoColor=white" height="42" alt="Git Extensions" title="Git Extensions" />
 </p>
