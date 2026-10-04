@@ -146,9 +146,5 @@
   <animate attributeName="y" values="66;494;66" dur="8s" repeatCount="indefinite"/>
 </rect>
 
-<<<<<<< HEAD
-<text x="500" y="512" text-anchor="middle" class="mono small">2026-10-04 18:23 UTC</text>
-=======
-<text x="500" y="512" text-anchor="middle" class="mono small">2026-10-04 18:16 UTC</text>
->>>>>>> b8d722ef1546d5f0f3ce0c3b9457315ba08b0efb
+<text x="500" y="512" text-anchor="middle" class="mono small">2026-10-04 18:27 UTC</text>
 </svg>
