@@ -1,40 +1,29 @@
 # Setup
 
-1. Create a public GitHub repository named exactly like your GitHub username.
-   The included config currently uses `imihu`.
-
-2. Copy everything from this folder into that repository.
-
-3. Commit and push.
-
-4. The README will automatically appear on your GitHub profile.
+1. Create a **public GitHub repository named exactly like your GitHub username**.
+2. Copy everything from this project into that repository.
+3. Update `config.json` with your real GitHub username if needed.
+4. Commit and push.
+5. GitHub will automatically render `README.md` on your profile.
 
 ## Dynamic dashboard
 
-`.github/workflows/update-profile.yml` runs daily and regenerates
-`assets/profile.svg`.
+The dashboard is generated from:
 
-It uses GitHub's built-in `GITHUB_TOKEN`; you do not need to create a PAT.
+`scripts/generate_profile.py`
 
-The dashboard can display:
-- public repository count
-- follower count
-- contribution count
+The generated file is:
 
-You can also manually run:
-**Actions → Update profile dashboard → Run workflow**
+`assets/profile.svg`
 
-## Customize
+The image used by the animated identity panel is:
 
-Edit `config.json` and commit. The workflow regenerates the SVG.
+`assets/mr-robot.jpg`
 
-Preview locally:
+To regenerate locally:
 
 ```bash
 python scripts/generate_profile.py
 ```
 
-Then open `assets/profile.svg` in a browser.
-
-If your actual GitHub username is not `imihu`, change
-`github_username` inside `config.json` and use the correct profile repository name.
+The GitHub Action in `.github/workflows/update-profile.yml` also regenerates the SVG automatically.
